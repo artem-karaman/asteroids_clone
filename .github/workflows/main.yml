@@ -8,12 +8,12 @@ jobs:
     runs-on: ubuntu-latest
    
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
           lfs: false
           
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: AsteroidsClone/Library
           key: Library-WebGL
@@ -28,12 +28,12 @@ jobs:
           targetPlatform: WebGL 
           projectPath: AsteroidsClone
           
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: Build-WebGL
           path: build/WebGL
           
-      - uses: JamesIves/github-pages-deploy-action@3.7.1
+      - uses: JamesIves/github-pages-deploy-action@4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh_pages

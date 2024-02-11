@@ -15,7 +15,7 @@ jobs:
           
       - uses: actions/cache@v2
         with:
-          path: Library
+          path: AsteroidsClone/Library
           key: Library-WebGL
           restore-keys: Library-
           

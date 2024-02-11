@@ -33,7 +33,7 @@ jobs:
           name: Build-WebGL
           path: build/WebGL
           
-      - uses: JamesIves/github-pages-deploy-action@4
+      - uses: JamesIves/github-pages-deploy-action@v4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh_pages

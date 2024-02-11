@@ -24,7 +24,7 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: WebGL 
-          path: AsteroidsClone
+          projectPath: AsteroidsClone
           
       - uses: actions/upload-artifact@v2
         with:

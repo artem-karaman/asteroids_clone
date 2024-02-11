@@ -1,0 +1,37 @@
+name: Build project
+
+on: [push, pull_request]
+
+jobs:
+    name: Build for web gl
+    runs-on: ubuntu-latest
+   
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          lfs: false
+          
+      - uses: actions/cache@v2
+        with:
+          path: Library
+          key: Library-WebGL
+          restore-keys: Library-
+          
+      - uses: game-ci/unity-builder@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          targetPlatform: WebGL 
+          
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Build-WebGL
+          path: build/WebGL
+          
+      - uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh_pages
+          FOLDER: build/WebGL/WebGL/.
+

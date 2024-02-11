@@ -27,7 +27,7 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "9a6b70f0-3d52-49ba-8f86-d4300352c055",
+                    "id": "3852a21e-0a21-4f52-a7aa-a19cb044672a",
                     "path": "",
                     "interactions": "",
                     "processors": "",
@@ -35,15 +35,32 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
+                }
+            ]
+        },
+        {
+            "name": "Menu",
+            "id": "712fd3d0-4652-462d-9d74-d9a93faaeb11",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "5f3a705a-bc8e-4501-8b83-2b3341d26203",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
                 {
                     "name": "",
-                    "id": "a947fc88-a058-4d0a-be71-5883aa69b4cd",
+                    "id": "6513b7b3-9dc1-402f-b935-a563a393e8ff",
                     "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Shooting",
+                    "action": "New action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

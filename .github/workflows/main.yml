@@ -3,6 +3,7 @@ name: Build project
 on: [push, pull_request]
 
 jobs:
+  buildForWebGL:
     name: Build for web gl
     runs-on: ubuntu-latest
    

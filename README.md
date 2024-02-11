@@ -1,7 +1,6 @@
 # Asteroids clone
 Clone of original game - https://en.wikipedia.org/wiki/Asteroids_(video_game)
 
-
 ## Tools and packages:
 - Unity version - 2022.3.19f1
   - Unity packages:
@@ -9,3 +8,9 @@ Clone of original game - https://en.wikipedia.org/wiki/Asteroids_(video_game)
   
 ## Development status:
 - Not ready yet, under active development
+
+### WebGL build
+
+updated every commit published here =>
+
+https://artem-karaman.github.io/asteroids_clone/

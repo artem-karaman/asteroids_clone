@@ -1,3 +1,5 @@
+[![Build project](https://github.com/artem-karaman/asteroids_clone/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/artem-karaman/asteroids_clone/actions/workflows/main.yml)
+
 # Asteroids clone
 Clone of original game - https://en.wikipedia.org/wiki/Asteroids_(video_game)
 

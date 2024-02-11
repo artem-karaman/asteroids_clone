@@ -1,0 +1,16 @@
+{
+    "name": "asteroid.view",
+    "rootNamespace": "",
+    "references": [
+        "asteroid.model"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

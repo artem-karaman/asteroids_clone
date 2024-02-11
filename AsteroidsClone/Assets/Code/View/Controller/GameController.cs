@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameController : MonoBehaviour
 {
     [SerializeField]
     private ObjectSpawner _playerSpawner;
+
     void Start()
     {
         _playerSpawner.CreateOrAdd();

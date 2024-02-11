@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Logger : ILogger
+public class Logger : Asteroids.Model.ILogger
 {
     public void LogInfo(string message)
     {

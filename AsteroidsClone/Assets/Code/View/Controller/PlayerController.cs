@@ -7,14 +7,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private ScreenSettings _screenSettings;
 
+
     // Update is called once per frame
-    void FixedUpdate()
-    {
-        transform
-            .Translate(
-                _playerSettings.InstantSpeed * Time.fixedDeltaTime * Vector3.up
-            );
-    }
+    //void FixedUpdate()
+    // {
+    //    transform
+    //        .Translate(
+    //            _playerSettings.InstantSpeed * Time.fixedDeltaTime * Vector3.up
+    //        );
+    //}
 
     void OnBecameInvisible()
     {

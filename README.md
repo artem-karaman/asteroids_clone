@@ -13,6 +13,6 @@ Clone of original game - https://en.wikipedia.org/wiki/Asteroids_(video_game)
 
 ### WebGL build
 
-updated every commit, stored on github pages 
+updated every push, stored on github pages 
 
 ⇨ https://artem-karaman.github.io/asteroids_clone/

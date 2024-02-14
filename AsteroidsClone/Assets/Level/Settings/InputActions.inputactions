@@ -6,7 +6,7 @@
             "id": "5f81d6c4-6354-4fa9-abc6-9e413463a770",
             "actions": [
                 {
-                    "name": "Movement",
+                    "name": "Move",
                     "type": "Button",
                     "id": "1dd2f28e-15b6-4187-a60a-d687134eb916",
                     "expectedControlType": "Button",
@@ -15,7 +15,16 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Shooting",
+                    "name": "Rotate",
+                    "type": "Value",
+                    "id": "6541640a-e687-4172-b528-e59db62bb455",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Shoot",
                     "type": "Button",
                     "id": "5c56a341-1110-41f2-a337-58c344ce9a2e",
                     "expectedControlType": "Button",
@@ -28,13 +37,79 @@
                 {
                     "name": "",
                     "id": "3852a21e-0a21-4f52-a7aa-a19cb044672a",
-                    "path": "",
+                    "path": "<Keyboard>/w",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9e329bad-0d8a-4a13-838e-854925024872",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "4fdb37f4-8c63-49f6-b723-e1587585a519",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "8dd70b66-75e6-494b-b125-66aeb62e217a",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "0cf29655-f99f-452e-b7f2-d51e0a4e14d7",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "e870d7b1-96e1-46e7-9158-09297c96ff99",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "88a86f7e-bf1a-438d-84db-ccddec4b397d",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         },

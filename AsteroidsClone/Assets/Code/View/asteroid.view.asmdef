@@ -2,7 +2,8 @@
     "name": "asteroid.view",
     "rootNamespace": "",
     "references": [
-        "asteroid.model"
+        "asteroid.model",
+        "Unity.InputSystem"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

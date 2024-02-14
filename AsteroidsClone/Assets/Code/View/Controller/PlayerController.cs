@@ -34,17 +34,17 @@ public class PlayerController : MonoBehaviour
 
     private void OnMoveAction(InputAction.CallbackContext context)
     {
-       transform
-            .Translate(
-                _playerSettings.InstantSpeed *
-                Time.fixedDeltaTime *
-                Vector2.up);
+        transform.position = Vector3.Lerp(transform.position, new Vector2(transform.position.x, transform.position.y + 10), Time.deltaTime);
+           
     }
 
     private void OnDisable()
     {
+        _moveAction.action.performed -= OnMoveAction;
         _moveAction.action.Disable();
-        _rotateAction.action.Disable();
+
+        _rotateAction.action.performed -= OnRotateAction;
+       _rotateAction.action.Disable();
     }
 
     void OnBecameInvisible()

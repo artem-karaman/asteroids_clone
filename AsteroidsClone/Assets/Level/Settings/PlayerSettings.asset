@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8bcdd3613dec46a4b61621de20af03d, type: 3}
   m_Name: PlayerSettings
   m_EditorClassIdentifier: 
-  InstantSpeed: 1
+  InstantSpeed: 10

@@ -102,3 +102,4 @@ MonoBehaviour:
   _moveAction: {fileID: 4469023047369767586, guid: 77e3ffbfb8ec04fcf8c32a795b547436, type: 3}
   _shootAction: {fileID: -4615529859468199394, guid: 77e3ffbfb8ec04fcf8c32a795b547436, type: 3}
   _rotateAction: {fileID: -8852382362417061555, guid: 77e3ffbfb8ec04fcf8c32a795b547436, type: 3}
+  speed: 50

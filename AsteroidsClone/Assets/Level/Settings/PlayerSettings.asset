@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8bcdd3613dec46a4b61621de20af03d, type: 3}
   m_Name: PlayerSettings
   m_EditorClassIdentifier: 
-  InstantSpeed: 10
+  InstantSpeed: 0
+  Inertia: {x: 0, y: 0, z: 0}
+  CurrentSpeed: 0

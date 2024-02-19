@@ -1,7 +1,10 @@
-﻿
-public class Player
+﻿namespace Asteroid.Model
 {
-    public int Score { get; set; }
+    public class Player
+    {
+        public int Score { get; set; }
 
-    public int InstantSpeed { get; set; }
+        public int InstantSpeed { get; set; }
+    }
 }
+

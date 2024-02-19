@@ -1,5 +1,9 @@
-﻿public enum WeaponType
+﻿namespace Asteroid.Model
 {
-    Bullet,
-    Laser
+    public enum WeaponType
+    {
+        Bullet,
+        Laser
+    }
 }
+

@@ -9,7 +9,7 @@ Clone of original game - https://en.wikipedia.org/wiki/Asteroids_(video_game)
     - Input system 1.7.0
   
 ## Development status:
-- Not ready yet, under active development
+- Not ready yet
 
 ### WebGL build
 

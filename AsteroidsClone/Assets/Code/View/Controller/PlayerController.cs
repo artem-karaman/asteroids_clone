@@ -8,36 +8,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private ScreenSettings _screenSettings;
 
-    [SerializeField]
-    private InputActionReference _moveAction;
-    [SerializeField]
-    private InputActionReference _shootAction;
-    [SerializeField]
-    private InputActionReference _rotateAction;
-
     public float GasForce = 0.05f; // сила газа
     public float StopForce = -2f; // сила торможения
     public float SpeedLimit = 0.1f; // ограничение скорости
     public float _inertionDamping = 0.99f;
-
-    private void OnEnable()
-    {
-        _moveAction.action.Enable();
-        _moveAction.action.performed += OnMoveAction;
-
-        _rotateAction.action.Enable();
-        _rotateAction.action.performed += OnRotateAction;
-    }
-
-    private void OnRotateAction(InputAction.CallbackContext context)
-    {
-
-    }
-
-    private void OnMoveAction(InputAction.CallbackContext context)
-    {
-        // transform.position += transform.up * Time.deltaTime * _playerSettings.InstantSpeed;
-    }
 
     void FixedUpdate()
     {
@@ -55,18 +29,21 @@ public class PlayerController : MonoBehaviour
         transform.Translate(_playerSettings.Inertia, Space.World);
     }
 
-    private void OnDisable()
-    {
-        _moveAction.action.performed -= OnMoveAction;
-        _moveAction.action.Disable();
-
-        _rotateAction.action.performed -= OnRotateAction;
-        _rotateAction.action.Disable();
-    }
-
     void OnBecameInvisible()
     {
         Debug.Log("Entered method called: OnBecameInvisible");
         transform.position = _screenSettings.BottomCenterPosition;
+    }
+
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        var value = context.ReadValue<float>();
+        Debug.Log($"Получаю значение ввода равного = {value}");
+    }
+
+    public void OnRotate(InputAction.CallbackContext context)
+    {
+        var value =context.ReadValue<Vector2>();
+        Debug.Log($"Получаю значение ввода равного = {value}");
     }
 }

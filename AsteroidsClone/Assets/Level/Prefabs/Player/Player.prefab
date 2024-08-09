@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1136397363448254346}
   - component: {fileID: 2399515068062169278}
   - component: {fileID: 3869628966068833729}
+  - component: {fileID: 6036875128273795778}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -99,7 +100,77 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerSettings: {fileID: 11400000, guid: 1875c6ae9502f4976bcc30f92ec5fa8a, type: 2}
   _screenSettings: {fileID: 11400000, guid: fad91afed9a5848a597834261eeda009, type: 2}
-  _moveAction: {fileID: 4469023047369767586, guid: 77e3ffbfb8ec04fcf8c32a795b547436, type: 3}
-  _shootAction: {fileID: -4615529859468199394, guid: 77e3ffbfb8ec04fcf8c32a795b547436, type: 3}
-  _rotateAction: {fileID: -8852382362417061555, guid: 77e3ffbfb8ec04fcf8c32a795b547436, type: 3}
-  speed: 50
+  GasForce: 0.05
+  StopForce: -2
+  SpeedLimit: 0.1
+  _inertionDamping: 0.99
+--- !u!114 &6036875128273795778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8069131803251921066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 77e3ffbfb8ec04fcf8c32a795b547436, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3869628966068833729}
+        m_TargetAssemblyTypeName: PlayerController, asteroid.view
+        m_MethodName: OnMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1dd2f28e-15b6-4187-a60a-d687134eb916
+    m_ActionName: Player/Move[/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3869628966068833729}
+        m_TargetAssemblyTypeName: PlayerController, asteroid.view
+        m_MethodName: OnRotate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 6541640a-e687-4172-b528-e59db62bb455
+    m_ActionName: Player/Rotate[/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5c56a341-1110-41f2-a337-58c344ce9a2e
+    m_ActionName: Player/Shoot[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5f3a705a-bc8e-4501-8b83-2b3341d26203
+    m_ActionName: Menu/New action
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
